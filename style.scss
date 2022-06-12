@@ -1,0 +1,214 @@
+@mixin center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+
+@mixin middle{
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;	
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
+	z-index: 0;
+}
+
+
+nav{
+	width: 100%;
+	height: 6.60vh;
+	background-color: #2f2f2f;
+
+	ul{
+		list-style-type: none;
+		@include center();
+
+		li{
+			display: inline;
+			a{
+				color: #23bdb3;
+				font-weight: 500;
+				font-size: 17px;
+				margin: 0 50px;
+				padding: 0;
+				
+				@include center();
+			}
+		} 
+	}
+}
+
+
+.event{
+	img{
+		display: block;
+		width: auto;
+		height: 62vh;
+		padding: 0;
+		margin: 0;
+		border: 0;
+	}
+
+	background-color: white;
+	display: flex;
+	height: 100%;
+	@include middle();
+		
+	.event-text{
+		padding-left: 60px;
+		p:nth-child(1){
+			font-weight: 800;
+			font-size: 63px;
+			color: black;
+			text-transform: uppercase;
+				
+		}
+		p:nth-child(2){
+			font-family: 'Lato', sans-serif;
+			font-weight: 800;
+			font-size: 57px;
+			text-transform: uppercase;
+			-webkit-text-stroke-width: 1px;
+	  		-webkit-text-fill-color: white;
+	  		
+		}
+			p:nth-child(3){
+			width: 398px;
+			height: 75px;
+			overflow: hidden;
+			font-weight: 500;
+			font-size: 21px;
+			margin-top: 15px;
+		}
+			button{
+			background-color: white;
+			border: solid;
+			outline: 0;
+			padding: 10px 32px;
+			margin-top: 20px;
+			font-size: 18px;
+		}
+	}	
+}
+
+#logo{
+	height: 40px;
+	width: 40px;
+}
+
+
+
+.newsletter{
+	width: 100%;
+	background-color: #d22150;
+	position: fixed;
+	top: 68.60vh;
+	bottom: 6.60vh ;
+	display: flex;
+	.a{
+		width: 35%;
+		@include center();
+
+		.b{
+			display: block;
+			h2{
+				
+				font-weight: 800;
+				font-size: 35px;
+			}
+
+			p{
+				font-weight: 500;
+				font-size: 18px;
+				overflow: hidden;
+				width: 364px;
+				height: 80px;
+			}
+
+		}
+		
+	}
+
+
+	.c{
+		@include center();
+		.d{
+			p{
+				font-weight: 600;
+				font-size: 15px;
+				padding-bottom: 20px;
+			}
+			input{
+				height: 35px;
+				width: 522px;
+				padding: 4px;
+				border: solid;
+			  	outline: 0;
+			}
+
+		}
+
+	}
+	
+}
+
+footer{
+	height: 6.60vh;
+	width: 100%;
+	background-color: #23bdb3;
+	position: absolute;
+	bottom: 0px;
+	display: flex;	
+	
+
+	.footer-p{
+		@include middle();
+		justify-content: left;
+		width: 50%;
+		padding-left: 60px;
+	}
+
+	.footer-i{
+		
+		@include middle();
+		width: 50%;
+		justify-content: right;
+		padding-right: 40px;	
+
+	}
+	p{
+		color: white;
+		font-weight: 600;
+		font-size: 12px;
+	}
+	i{
+		color: white;
+		font-size:  25px;
+		padding: 0 12px;
+
+	}
+
+
+}
+
+
+.ticket{
+	z-index: 1;
+	position: absolute;
+	right: 7%;
+	bottom: 15%;
+	z-index: 1;
+	width: auto;
+	height: 240px;
+}
+
+
