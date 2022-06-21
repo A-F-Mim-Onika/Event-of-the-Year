@@ -19,7 +19,7 @@
 	box-sizing: border-box;	
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
-	z-index: 0;
+	
 }
 
 
@@ -64,7 +64,7 @@ nav{
 	@include middle();
 		
 	.event-text{
-		padding-left: 60px;
+		padding-left: 4vw;
 		p:nth-child(1){
 			font-weight: 800;
 			font-size: 63px;
@@ -77,32 +77,34 @@ nav{
 			font-weight: 800;
 			font-size: 57px;
 			text-transform: uppercase;
-			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-width: 2px;
 	  		-webkit-text-fill-color: white;
 	  		
 		}
 			p:nth-child(3){
-			width: 398px;
-			height: 75px;
-			overflow: hidden;
-			font-weight: 500;
-			font-size: 21px;
-			margin-top: 15px;
+			max-width: 38vw;
+			height: 10vh;
+			margin: auto;
+			font-weight: 600;
+			font-size: 14px;
+			margin-top: 3vh;
+			@include center();
+			
 		}
 			button{
 			background-color: white;
 			border: solid;
 			outline: 0;
-			padding: 10px 32px;
-			margin-top: 20px;
+			padding: 0.625em 2em;
+			margin-top: 3vh;
 			font-size: 18px;
 		}
 	}	
 }
 
 #logo{
-	height: 40px;
-	width: 40px;
+	height: 5.5vh;
+	width: auto;
 }
 
 
@@ -126,12 +128,23 @@ nav{
 				font-size: 35px;
 			}
 
-			p{
-				font-weight: 500;
-				font-size: 18px;
-				overflow: hidden;
-				width: 364px;
-				height: 80px;
+			.newsletter-display{
+				display: inline;
+
+				.newsletter-display-flex{
+					display: flex;
+					margin:6px;
+					p{
+						font-weight: 600; 
+						font-size: 18px;
+						padding-left: 10px;
+						overflow: wrap;
+						max-width: 20vw;
+
+					}
+
+
+				}
 			}
 
 		}
@@ -144,12 +157,12 @@ nav{
 		.d{
 			p{
 				font-weight: 600;
-				font-size: 15px;
+				font-size: 18px;
 				padding-bottom: 20px;
 			}
 			input{
-				height: 35px;
-				width: 522px;
+				height: 6vh;
+				width: 38vw;
 				padding: 4px;
 				border: solid;
 			  	outline: 0;
@@ -202,13 +215,15 @@ footer{
 
 
 .ticket{
-	z-index: 1;
 	position: absolute;
 	right: 7%;
 	bottom: 15%;
 	z-index: 1;
 	width: auto;
-	height: 240px;
+	height: 30vh;
 }
 
-
+#icons{
+	font-size: 20px;
+	color: black;
+}

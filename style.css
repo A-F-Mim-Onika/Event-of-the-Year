@@ -3,8 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  z-index: 0; }
+  font-family: 'Montserrat', sans-serif; }
 
 nav {
   width: 100%;
@@ -44,7 +43,7 @@ nav {
     margin: 0;
     border: 0; }
   .event .event-text {
-    padding-left: 60px; }
+    padding-left: 4vw; }
     .event .event-text p:nth-child(1) {
       font-weight: 800;
       font-size: 63px;
@@ -55,26 +54,30 @@ nav {
       font-weight: 800;
       font-size: 57px;
       text-transform: uppercase;
-      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-width: 2px;
       -webkit-text-fill-color: white; }
     .event .event-text p:nth-child(3) {
-      width: 398px;
-      height: 75px;
-      overflow: hidden;
-      font-weight: 500;
-      font-size: 21px;
-      margin-top: 15px; }
+      max-width: 38vw;
+      height: 10vh;
+      margin: auto;
+      font-weight: 600;
+      font-size: 14px;
+      margin-top: 3vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%; }
     .event .event-text button {
       background-color: white;
       border: solid;
       outline: 0;
-      padding: 10px 32px;
-      margin-top: 20px;
+      padding: 0.625em 2em;
+      margin-top: 3vh;
       font-size: 18px; }
 
 #logo {
-  height: 40px;
-  width: 40px; }
+  height: 5.5vh;
+  width: auto; }
 
 .newsletter {
   width: 100%;
@@ -94,12 +97,17 @@ nav {
       .newsletter .a .b h2 {
         font-weight: 800;
         font-size: 35px; }
-      .newsletter .a .b p {
-        font-weight: 500;
-        font-size: 18px;
-        overflow: hidden;
-        width: 364px;
-        height: 80px; }
+      .newsletter .a .b .newsletter-display {
+        display: inline; }
+        .newsletter .a .b .newsletter-display .newsletter-display-flex {
+          display: flex;
+          margin: 6px; }
+          .newsletter .a .b .newsletter-display .newsletter-display-flex p {
+            font-weight: 600;
+            font-size: 18px;
+            padding-left: 10px;
+            overflow: wrap;
+            max-width: 20vw; }
   .newsletter .c {
     display: flex;
     justify-content: center;
@@ -107,11 +115,11 @@ nav {
     height: 100%; }
     .newsletter .c .d p {
       font-weight: 600;
-      font-size: 15px;
+      font-size: 18px;
       padding-bottom: 20px; }
     .newsletter .c .d input {
-      height: 35px;
-      width: 522px;
+      height: 6vh;
+      width: 38vw;
       padding: 4px;
       border: solid;
       outline: 0; }
@@ -147,12 +155,15 @@ footer {
     padding: 0 12px; }
 
 .ticket {
-  z-index: 1;
   position: absolute;
   right: 7%;
   bottom: 15%;
   z-index: 1;
   width: auto;
-  height: 240px; }
+  height: 30vh; }
 
-/*# sourceMappingURL=scss.css.map */
+#icons {
+  font-size: 20px;
+  color: black; }
+
+/*# sourceMappingURL=style.css.map */
